@@ -15,13 +15,16 @@ let data = {
     }
 
  // jawaban No 4 bagian a
-let newData = {...data}
-newData.name = name = "Riki Rhenaldi"
-newData.email = email = "riki.rhenaldi24@gmail.com"
-newData.hobbies = hobbies = ["Writing coding","Digital Painting","Read comic"]
+let newData = {
+    ...data,
+    name : "Riki Rhenaldi",
+    email : "riki.rhenaldi24@gmail.com",
+    hobbies : ["Writing coding","Digital Painting","Read comic"]
+}
+console.log(newData);
 
 // jawaban No 4 bagian b
-const street = newData.address.street 
-const city = newData.address.city
+const {street, city} = newData.address
 
-console.log(newData);
+console.log(street);
+console.log(city);
